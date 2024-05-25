@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 9162750874854729904, guid: 3e88ebd7b710c404b9f8be0326a640c8, type: 3}
-  spawnRate: 5
+  spawnRate: 3
   heightOffset: 10
 --- !u!4 &280849302
 Transform:
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 637205833}
   - component: {fileID: 637205832}
   - component: {fileID: 637205831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Birb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,9 +455,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_LinearDrag: 0.05
+  m_AngularDrag: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -504,6 +504,52 @@ CircleCollider2D:
   m_Offset: {x: -0.11, y: -0.4}
   serializedVersion: 2
   m_Radius: 1.98
+--- !u!1 &850662063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850662065}
+  - component: {fileID: 850662064}
+  m_Layer: 0
+  m_Name: LogicManager
+  m_TagString: Logic
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &850662064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850662063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73a540f3dc785e40a9ee5c5d4df3671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: 0
+  scoreText: {fileID: 207672311}
+--- !u!4 &850662065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850662063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 727.4061, y: 762.8748, z: -12.350048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373725191
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,3 +729,4 @@ SceneRoots:
   - {fileID: 280849302}
   - {fileID: 1373725195}
   - {fileID: 1966753663}
+  - {fileID: 850662065}
